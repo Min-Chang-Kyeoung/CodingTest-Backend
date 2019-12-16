@@ -22,10 +22,11 @@ const createResponse = (status, body) => ({
 
 exports.createProduct = (event, ctx, cb) => {
   ctx.callbackWaitsForEmptyEventLoop = false;
-  const { name, cost, weight, company, dealer, relatedproduct ,review } = JSON.parse(event.body);
+  const { name, cost, weight, company, dealer, likedPeople ,review, colors } = JSON.parse(event.body);
   connect().then(
     () => {
-      const product = new Product({ name, cost, weight, company, dealer, relatedproduct ,review });
+      const product = new Product({ name, cost, weight, company, dealer, likedPeople ,review, colors});
+      console.log(event.body.dealer);
       return product.save();
     }
   ).then(

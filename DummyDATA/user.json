@@ -1,0 +1,20 @@
+[
+    {
+        "name":"이순신",
+        "id":"lee",
+        "pw":"123",
+        "likedProduct":[{"product_oid":"5df799612c817100077619fb"}]
+    },
+    {
+        "name":"민창경",
+        "id":"min",
+        "pw":"123",
+        "likedProduct":[{"product_oid":"5df798a52c817100077619f1"},{"product_oid":"5df799982c81710007761a04"}]
+    },
+    {
+        "name":"홍길동",
+        "id":"hong",
+        "pw":"123",
+        "likedProduct":[{"product_oid":"5df799982c81710007761a04"},{"product_oid":"5df798a52c817100077619f1"}]
+    }
+    ]

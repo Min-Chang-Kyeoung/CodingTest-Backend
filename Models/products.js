@@ -5,9 +5,10 @@ const ProductSchema = new mongoose.Schema({
   cost: String,
   weight: String,
   company: String,
+  colors:[{hexacode:String}],
   dealer:[{companyName:String, cost:String}],
-  relatedProdct:[{product_oid:String}],
-  review:[{user_oid:String,option:String,date:String,isGood:Boolean,content:String}]
+  likedPeople:[{user_id:String}],
+  review:[{user_id:String,option:String,date:String,isGood:Boolean,content:String}]
 });
 
 const Product = mongoose.model('Product', ProductSchema);
