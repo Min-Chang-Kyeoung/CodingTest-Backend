@@ -1,0 +1,19 @@
+service: codingtest-backend
+provider:
+  name: aws
+  runtime: nodejs12.x
+  stage: dev
+  region: us-east-1
+functions:
+  createProduct:
+    handler: Controllers/products.createProduct
+    events:
+      - http:
+          path: product/create
+          method: post
+  createUser:
+        handler: Controllers/users.createUser
+        events:
+          - http:
+              path: users/create
+              method: post

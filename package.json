@@ -1,0 +1,22 @@
+{
+  "name": "codingtest-backend",
+  "version": "1.0.0",
+  "description": "![Test Image](./IMAGE.png)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Min-Chang-Kyeoung/CodingTest-Backend.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Min-Chang-Kyeoung/CodingTest-Backend/issues"
+  },
+  "homepage": "https://github.com/Min-Chang-Kyeoung/CodingTest-Backend#readme",
+  "dependencies": {
+    "mongoose": "^5.8.1"
+  }
+}
