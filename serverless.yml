@@ -3,17 +3,54 @@ provider:
   name: aws
   runtime: nodejs12.x
   stage: dev
-  region: us-east-1
+  region: us-east-2
 functions:
+
   createProduct:
     handler: Controllers/products.createProduct
     events:
       - http:
           path: product/create
           method: post
+
   createUser:
         handler: Controllers/users.createUser
         events:
           - http:
               path: users/create
               method: post
+
+  getDetailProduct:
+    handler: Controllers/products.getDetailProduct
+    events:
+      - http:
+          path: product/getdetailproduct/{oid}
+          method: get
+
+  getColors:
+    handler: Controllers/products.getColors
+    events:
+      - http:
+          path: product/getColors/{oid}
+          method: get
+
+  getCompareProduct:
+    handler: Controllers/products.getCompareProduct
+    events:
+      - http:
+          path: product/getCompareProduct/{oid}
+          method: get
+  
+  getReview:
+    handler: Controllers/products.getReview
+    events:
+      - http:
+          path: product/getReview/{oid}
+          method: get
+
+  getRelatedProduct:
+    handler: Controllers/products.getRelatedProduct
+    events:
+      - http:
+          path: product/getRelatedProduct/{oid}
+          method: get
