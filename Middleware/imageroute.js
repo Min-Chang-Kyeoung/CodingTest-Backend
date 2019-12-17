@@ -6,7 +6,7 @@ const createImgResponse = (status,img) => ({
     body:img
 })
 
-exports.getCompareProduct = (event, ctx, cb) =>{
+exports.getImage = (event, ctx, cb) =>{
     ctx.callbackWaitsForEmptyEventLoop = false;
     let imgName = event.pathParameters.img;
     fs.exists(__dirname+'/'+imgName, (exists)=>{

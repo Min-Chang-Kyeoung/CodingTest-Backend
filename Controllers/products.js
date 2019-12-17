@@ -133,7 +133,7 @@ exports.getRelatedProduct = (event, ctx, cb) =>{
     })
   )
 }
-
+  
 exports.getReview = (event, ctx, cb) =>{
   ctx.callbackWaitsForEmptyEventLoop = false;
   connect().then(

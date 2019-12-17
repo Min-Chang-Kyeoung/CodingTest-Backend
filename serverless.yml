@@ -54,3 +54,10 @@ functions:
       - http:
           path: product/getRelatedProduct/{oid}
           method: get
+  
+  getImage:
+   handler: Middleware/imageroute.getImage
+    events:
+      - http:
+          path: image/getImage/{img}
+          method: get
